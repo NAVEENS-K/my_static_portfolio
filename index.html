@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naveens K | Cloud & DevOps Engineer</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 10px;
+      max-width: 700px;
+      margin-inline: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "▹";
+      color: var(--accent);
+      margin-right: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      border-top: 1px solid #1f2933;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <img src="./image.jpeg" alt="Profile Image" />
+    <h1>Naveens K</h1>
+    <p>
+      Cloud & DevOps Engineer focused on AWS, Infrastructure as Code,
+      automation, and building reliable systems instead of just talking about them.
+    </p>
+  </header>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Core Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cloud (AWS)</h3>
+        <p>EC2, S3, VPC, IAM, Route 53, CloudFront, ALB, Auto Scaling</p>
+      </div>
+      <div class="card">
+        <h3>DevOps</h3>
+        <p>CI/CD, GitHub Actions, Linux, Nginx, Docker, Bash scripting</p>
+      </div>
+      <div class="card">
+        <h3>Infrastructure as Code</h3>
+        <p>Terraform, state management, modules, environment separation</p>
+      </div>
+      <div class="card">
+        <h3>Networking</h3>
+        <p>VPC, Subnets, CIDR, IGW, NAT, Security Groups, Load Balancing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Static Website on AWS</h3>
+        <p>
+          Hosted a static portfolio using S3, CloudFront, Route 53 with HTTPS.
+          Optimized for performance and cost.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Terraform AWS Infrastructure</h3>
+        <p>
+          Built VPC, public/private subnets, EC2, ALB using Terraform.
+          Learned why state files matter the hard way.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>EC2 Web Server Automation</h3>
+        <p>
+          Automated Nginx/Apache setup using user-data scripts.
+          Linux-first approach, no GUI nonsense.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>CI/CD with GitHub Actions</h3>
+        <p>
+          Automated builds and deployments.
+          Focused on repeatability, not copy-paste deployments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNING -->
+  <section>
+    <h2>What I’m Actively Learning</h2>
+    <ul>
+      <li>Advanced AWS Networking & Security</li>
+      <li>Cloud Security & IAM best practices</li>
+      <li>Scalable system design</li>
+      <li>Production-grade DevOps workflows</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:knaveens408@gmail.com">knaveens408@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/NAVEENS-K" target="_blank" rel="noopener noreferrer">github.com/NAVEENS-K</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/naveens-kannan-786aa6327" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Naveens K — Built to be deployed, not just displayed.
+  </footer>
+
+</body>
+</html>
